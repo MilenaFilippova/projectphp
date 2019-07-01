@@ -4,7 +4,13 @@
 class Calendar
 {
 	public $topic;
-	public $type_n;
+	public $type_n=[
+		1 => 'Встреча', 
+		2 => 'Звонок', 
+		3 => 'Совещание',
+		4 => 'Дело',
+	
+	];
 	public $place;
 	public $date_reserv;
 	public $time_reserv;
@@ -14,6 +20,7 @@ class Calendar
 	
 	protected $errors=[];
 	protected $id=[];
+	public $table = 'tasks';
 	
 	//для получения защищенного айдишника из вне
 	public function getID()
@@ -39,13 +46,6 @@ class Calendar
 		'comment',
 	];
 	  
-	public static $array_type = 
-	[
-		1 => 'Встреча', 
-		2 => 'Звонок', 
-		3 => 'Совещание',
-		4 => 'Дело',
-	];
 	
 	
 	//public static $test='tested well';
