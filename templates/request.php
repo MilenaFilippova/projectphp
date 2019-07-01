@@ -1,7 +1,7 @@
 <?php include_once   '/../classes/calendar.php';?>
 
 <?php if($form->hasErrors):?>
-<p>еЕсть ошибки!</p>
+<p>Есть ошибки!</p>
 <!--<ul>
 <?php foreach ($form->getErrors() as $key=>$error):?>
 	<li><?=$error ?></li>
