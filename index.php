@@ -31,7 +31,7 @@ switch(getenv('REQUEST_METHOD'))
 		{
 			$form->fill(get_from_request(['topic','type_n','place','date_reserv','time_reserv','length','comment']));
 
-			$insertRow=$db->insertRow("INSERT INTO `task` (topic,type_n,place,date_reserv,time_reserv,length) VALUE(?,?,?)",
+			$insertRow=$db->insertRow("INSERT INTO `task` (topic,type_n,place,date_reserv,time_reserv,length) VALUE(?,?,?,?,?,?)",
 			["er","vdfvdd","dsvfv","2019-04-04","12:08","1"]);
 			
 			die_r($insertRow);
