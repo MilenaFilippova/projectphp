@@ -77,5 +77,5 @@
 
 
 <form action="/templates/task.php">
-		<p><input type="submit2" value="Перейти к заданиям"></p>
+		<button type="submit1">Перейти к заданиям</button></div>
 </form>
